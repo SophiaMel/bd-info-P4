@@ -1,0 +1,23 @@
+C:\Users\Alunos>sqlite3 eu.db
+SQLite version 3.38.2 2022-03-26 13:51:10
+Enter ".help" for usage hints.
+sqlite> .table
+sqlite> create table meusdados(id int primary key, nome text, endereco text);
+sqlite> insert into meusdados(id,nome,endereco) values (1,"Atila","Rua Raimundo Jose");
+sqlite> select id, nome, endereco from meusdados;
+1|Atila|Rua Raimundo Jose
+sqlite> update meusdados set nome = "Sophia" where id = 1;
+sqlite> select id, nome, endereco from meusdados;
+1|Sophia|Rua Raimundo Jose
+sqlite> update meusdados set endereco = "Rua Café" where id = 1;
+sqlite> select id, nome, endereco from meusdados;
+1|Sophia|Rua Café
+sqlite> delete from meusdados where nome = "Sophia";
+sqlite> select id, nome, endereco from meusdados;
+sqlite> select id,endereco from meusdados;
+sqlite> .table
+meusdados
+sqlite> drop table meusdados;
+sqlite> .table
+sqlite>
+
