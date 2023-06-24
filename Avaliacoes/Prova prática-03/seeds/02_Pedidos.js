@@ -7,7 +7,7 @@ exports.seed = function(knex) {
   .del()
   .then(function(){
     return knex('Pedidos').insert([
-      {NumPedido: 5, data:'25/04/23', produtos: 'Bolo de chocolate',cliente_id:1}
+      {NumPedido: 1, data:'25/04/23', produtos: 'Bolo de chocolate'}
 
     ]);
   })  // Deletes ALL existing entries
