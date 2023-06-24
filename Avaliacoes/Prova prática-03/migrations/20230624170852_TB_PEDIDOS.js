@@ -9,8 +9,7 @@ exports.up = function(knex) {
         table.integer('NumPedido').unsigned();
         table.string('data');
         table.string('produtos');
-        table.integer('cliente_id').unsigned();
-        table.foreign('cliente_id').references('cliente.id');
+        table.foreign('NumPedido').references('NumPedido.id');
     })
   
 };
