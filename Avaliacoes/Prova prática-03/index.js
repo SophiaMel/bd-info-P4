@@ -14,9 +14,9 @@ const exemploCliente2 = {
     endereço: 'Rua da Eliza,60',
     telefone:85987653421
 }
-//Clientes.atualizarClientes(1,exemploCliente2)
-//Clientes.obterCliente(2)
-//Clientes.excluirClientes(1)
+Clientes.atualizarClientes(1,exemploCliente2)
+Clientes.obterCliente(2)
+Clientes.excluirClientes(1)
 const exemploPedido = {
     NumPedido: 6,
     data : '10/03/23',
@@ -26,4 +26,12 @@ const exemploPedido = {
 
 }
 Pedido.criarPedido(exemploPedido)
-
+const exemploPedido2{
+    NumPedido: 7
+    data: '06/01/23',
+    produtos: 'brigadeiro',
+    cliente_id: 1
+    }
+Pedido.atualizarPedido(1,exemploPedido2)
+Pedido.obterPedido(2)
+Pedido.excluirPedido(1)
