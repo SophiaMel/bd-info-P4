@@ -27,10 +27,9 @@ const exemploPedido = {
 }
 Pedido.criarPedido(exemploPedido)
 const exemploPedido2{
-    NumPedido: 7
+    NumPedido: 1
     data: '06/01/23',
     produtos: 'brigadeiro',
-    cliente_id: 1
     }
 Pedido.atualizarPedido(1,exemploPedido2)
 Pedido.obterPedido(2)
