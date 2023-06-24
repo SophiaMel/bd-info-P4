@@ -9,7 +9,7 @@ const database = knex({
 class Pedido {
   static async criarPedido(pedido) {
     try {
-      const [id] = await database('disciplinas').insert(pedido);
+      const [id] = await database('Pedidos').insert(pedido);
       console.log('Pedido criada com ID:', id);
     } catch (error) {
       console.error('Erro ao criar Pedido:', error);
