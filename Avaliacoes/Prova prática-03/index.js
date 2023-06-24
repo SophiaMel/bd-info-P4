@@ -18,10 +18,9 @@ Clientes.atualizarClientes(1,exemploCliente2)
 Clientes.obterCliente(2)
 Clientes.excluirClientes(1)
 const exemploPedido = {
-    NumPedido: 6,
+    NumPedido: 2,
     data : '10/03/23',
     produtos: 'doce de goiaba',
-    cliente_id : 2
 
 
 }
